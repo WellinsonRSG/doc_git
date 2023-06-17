@@ -2,31 +2,63 @@
 # :hammer: COMANDOS DO GIT
 <h1 align="center"> Documentação do git para ajudar nos comandos </h1>
 
-* CRIAÇÃO:  
-Ele inicia o arquivo ".git/" para controlar a pasta.  
-````
-git init: 
-````
-Cria um novo repositório local.  
-````
-git clone:
-````
-git commit -m "<texto_da_modificação>": Responsável por criar uma nova versão do projeto com as referências do criador.  
 
-* MUDANÇAS LOCAIS:  
-git status: Identifica qual o status do arquivo, responsável por validar os arquivos modificados dentro do projeto.  
-git diff: mostra mudanças em arquivos rastreados.  
-git add: Inseri a pasta, ele é responsável por colocar o arquivo em uma área segura.  
-git add. -p <file>: adiciona algumas mudanças em <file> para o próximo commit.  
-git commit -a: confirma todas as alterações locais em arquivos rastreados.  
-git commit: confirma alterações previamente preparados.  
-git commit --amend: muda o último commit.  
+* CRIAÇÃO: 
+Ele inicia o arquivo ".git/" para controlar a pasta. 
+````
+git init
+```` 
+Cria um novo repositório local. 
+````
+git clone
+````
+Responsável por criar uma nova versão do projeto com as referências do criador.
+````
+git commit -m "<texto_da_modificação>"
+````
+* MUDANÇAS LOCAIS: 
+Identifica qual o status do arquivo, responsável por validar os arquivos modificados dentro do projeto.
+````
+git status
+````  
+Mostra mudanças em arquivos rastreados. 
+````
+git diff:  
+````
+Inseri a pasta, ele é responsável por colocar o arquivo em uma área segura.
+````
+git add  
+````
+Adiciona algumas mudanças em <file> para o próximo commit. 
+````
+git add. -p <file>
+````
+Confirma todas as alterações locais em arquivos rastreados.
+````
+git commit -a:   
+````
+Confirma alterações previamente preparados. 
+````
+git commit: 
+```` 
+Muda o último commit.
+````
+git commit --amend:
+````
 
-* HISTÓRICO:  
-git log: Valida os meus comentários e modificações, mostra todos os commit, começando pelo mais novo.  
-git log -p <file>: mostra mudanças ao longo do tempo para um arquivo específico.  
-git blame <file>: mostra quem alterou, o quê e quando em <file>.  
-
+* HISTÓRICO:
+Valida os meus comentários e modificações, mostra todos os commit, começando pelo mais novo.
+````
+git log:   
+````
+mostra mudanças ao longo do tempo para um arquivo específico.
+````
+git log -p <file>
+````
+Mostra quem alterou, o quê e quando em <file>.
+````
+git blame <file>:   
+````
 * BRANCHES:  
 git branch -av: lista todos os ramos existentes.  
 git checkout <nome_da_branch>: muda de branch ou ramo.  
