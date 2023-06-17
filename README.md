@@ -3,8 +3,14 @@
 <h1 align="center"> Documentação do git para ajudar nos comandos </h1>
 
 * CRIAÇÃO:  
-git init: Ele inicia o arquivo ".git/" para controlar a pasta.  
-git clone: cria um novo repositório local.     
+Ele inicia o arquivo ".git/" para controlar a pasta.  
+````
+git init: 
+````
+Cria um novo repositório local.  
+````
+git clone:
+````
 git commit -m "<texto_da_modificação>": Responsável por criar uma nova versão do projeto com as referências do criador.  
 
 * MUDANÇAS LOCAIS:  
