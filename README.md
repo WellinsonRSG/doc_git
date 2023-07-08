@@ -4,7 +4,7 @@
 
 
 * CRIAÇÃO: 
-````
+
 Ele inicia o arquivo ".git/" para controlar a pasta. 
 ````
 git init
@@ -18,6 +18,7 @@ Responsável por criar uma nova versão do projeto com as referências do criado
 git commit -m "<texto_da_modificação>"
 ````
 * MUDANÇAS LOCAIS: 
+
 Identifica qual o status do arquivo, responsável por validar os arquivos modificados dentro do projeto.
 ````
 git status
@@ -48,6 +49,7 @@ git commit --amend:
 ````
 
 * HISTÓRICO:
+
 Valida os meus comentários e modificações, mostra todos os commit, começando pelo mais novo.
 ````
 git log:   
@@ -60,7 +62,8 @@ Mostra quem alterou, o quê e quando em <file>.
 ````
 git blame <file>:   
 ````
-* BRANCHES:  
+* BRANCHES:
+
 lista todos os ramos existentes.
 ````
 git branch -av
@@ -91,6 +94,7 @@ git tag <tag-name>
 ````  
 
 * ATUALIZAR E PUBLICAR:
+
 lista todos os controles remotos configurados atualmente.
 ````
 git remote -v
@@ -113,6 +117,7 @@ git pull: <remote> <branch>
 ````  
 
 * FUNDIR E REBASE:
+
 Ele adiciona a branch atual o conteúdo da outra branch.
 ````
 git merge <nome_da_branch>
@@ -142,7 +147,8 @@ usa o editor de tour para resolver conflitos manualmente e (após resolver) marc
 git rm <resolved-file>
 ````   
 
-* DESFAZER:  
+* DESFAZER:
+
 descarta todas as mudanças locais em seu diretório de trabalho.
 ````
 git reset-hard HEAD
@@ -168,7 +174,8 @@ redefine o ponteiro HEAD para um commit anterior, e preserva as mudanças locais
 git reset-keep <commit>
 ````   
 
-* ATALHOS ADICIONAIS:  
+* ATALHOS ADICIONAIS:
+
 avança linhas das informações já inseridas, deixando a tela limpa para inserir novas informações.
 ````
 CTRL + L
