@@ -60,44 +60,129 @@ Mostra quem alterou, o quê e quando em <file>.
 git blame <file>:   
 ````
 * BRANCHES:  
-git branch -av: lista todos os ramos existentes.  
-git checkout <nome_da_branch>: muda de branch ou ramo.  
-git checkout <new-branch>: cria uma nova filial com base.  
-git checkout-track <remote/branch>: cria uma nova filial com base.  
-git checkout -b <nome_da_branch>: cria uma nova branch ou ramo.  
-git branch -d <brach>: deleta uma filial local.  
-git tag <tag-name>: marca um commit atual com uma nova tag.  
+lista todos os ramos existentes.
+````
+git branch -av
+````  
+ muda de branch ou ramo.
+ ````
+git checkout <nome_da_branch>
+````
+cria uma nova filial com base.
+````
+git checkout <new-branch>
+````
+cria uma nova filial com base.
+````
+git checkout-track <remote/branch>
+````
+cria uma nova branch ou ramo.
+````
+git checkout -b <nome_da_branch>
+````   
+deleta uma filial local.
+````
+git branch -d <brach>
+````
+marca um commit atual com uma nova tag.
+````
+git tag <tag-name>
+````  
 
-* ATUALIZAR E PUBLICAR:  
-git remote -v: lista todos os controles remotos configurados atualmente.  
-git remove show <remove>: mostra informações sobre um controle remoto.  
-git remote add <shortname> <url>:adiciona un novo repositório remoto, denominado <remote>.  
-git fetch <remote>: baixa todas as alterações de <remote>, mas não integra no HEAD.  
-git pull: <remote> <branch>: baixa as alterações e marca/integra diretamente no HEAD.  
+* ATUALIZAR E PUBLICAR:
+lista todos os controles remotos configurados atualmente.
+````
+git remote -v
+````  
+mostra informações sobre um controle remoto.
+````
+git remove show <remove>
+````
+adiciona un novo repositório remoto, denominado <remote>.
+````
+git remote add <shortname> <url>
+````
+baixa todas as alterações de <remote>, mas não integra no HEAD.
+````
+git fetch <remote>
+````
+baixa as alterações e marca/integra diretamente no HEAD.
+````
+git pull: <remote> <branch>
+````  
 
-* FUNDIR E REBASE:  
-git merge <nome_da_branch>: Ele adiciona a branch atual o conteúdo da outra branch.  
-git rebase <branch>: rebase seu HEAD  atual em <branch>.  
-git rebase --abort: aborta um rebase.  
-git base --continue: continua um rebase após resolver os conflitos.  
-git mergetool: usa a ferramenta de fusão configurada do tour para resolver conflitos:  
-git add <resolved-file>: usa o editor de tour para resolver conflitos manualmente e (após resolver) marcar o arquivo como resolvido.  
-git rm <resolved-file>: usa o editor de tour para resolver conflitos manualmente e (após resolver) marcar o arquivo como resolvido.  
+* FUNDIR E REBASE:
+Ele adiciona a branch atual o conteúdo da outra branch.
+````
+git merge <nome_da_branch>
+````
+rebase seu HEAD  atual em <branch>.
+````
+git rebase <branch>
+````
+aborta um rebase.
+````
+git rebase --abort
+```` 
+continua um rebase após resolver os conflitos.
+````  
+git base --continue
+````
+usa a ferramenta de fusão configurada do tour para resolver conflitos.
+````
+git mergetool
+````
+usa o editor de tour para resolver conflitos manualmente e (após resolver) marcar o arquivo como resolvido.
+````
+git add <resolved-file>
+````
+usa o editor de tour para resolver conflitos manualmente e (após resolver) marcar o arquivo como resolvido.
+````
+git rm <resolved-file>
+````   
 
 * DESFAZER:  
-git reset-hard HEAD: descarta todas as mudanças locais em seu diretório de trabalho.  
-git checkout HEAD <file>: descarta as alterações locais em um arquivo específico.  
-git revert <commit>: reverte um commit (produzindo um novo commit com mudanças contrárias).  
-git reset-hard <commit>: redefine o ponteiro HEAD para um commit anterior, e descarta todas as alterações até então.  
-git reset <commit>: redefine o ponteiro HEAD para um commit anterior, e preserva todas as mudanças como mudanças não planejadas.  
-git reset-keep <commit>: redefine o ponteiro HEAD para um commit anterior, e preserva as mudanças locais não comprometidas.  
+descarta todas as mudanças locais em seu diretório de trabalho.
+````
+git reset-hard HEAD
+````
+descarta as alterações locais em um arquivo específico. 
+````
+git checkout HEAD <file>
+````
+reverte um commit (produzindo um novo commit com mudanças contrárias).
+```` 
+git revert <commit>
+````
+redefine o ponteiro HEAD para um commit anterior, e descarta todas as alterações até então.
+````
+git reset-hard <commit>
+````
+redefine o ponteiro HEAD para um commit anterior, e preserva todas as mudanças como mudanças não planejadas.
+````
+git reset <commit>
+````
+redefine o ponteiro HEAD para um commit anterior, e preserva as mudanças locais não comprometidas.
+```` 
+git reset-keep <commit>
+````   
 
-* ADICIONAIS:  
-ATALHOS: CTRL + L: avança linhas das informações já inseridas, deixando a tela limpa para inserir novas informações.  
-ERROS DE CONFIGURAÇÃO DO USUÁRIO DO GIT:  
+* ATALHOS ADICIONAIS:  
+avança linhas das informações já inseridas, deixando a tela limpa para inserir novas informações.
+````
+CTRL + L
+````  
+
+ERROS DE CONFIGURAÇÃO DO USUÁRIO DO GIT: 
+```` 
 git config --global user.name "<seu_nome>  
-git config --global user.email "<seu_email>.  
+````
+````
+git config --global user.email "<seu_email>. 
+```` 
+````
 ERRO 403: exclua as credencias do antigo usuário em "Gerenciador de Credenciais".
+````
 
 
 *TRABALHO EM DUPLA (PILOTO E COPILOTO)
