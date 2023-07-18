@@ -29,7 +29,7 @@ git diff:
 ````
 Inseri a pasta, ele é responsável por colocar o arquivo em uma área segura.
 ````
-git add  
+git add .
 ````
 Adiciona algumas mudanças em <file> para o próximo commit. 
 ````
